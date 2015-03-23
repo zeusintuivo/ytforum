@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace YTForum\Commands;
 
 abstract class Command {
 

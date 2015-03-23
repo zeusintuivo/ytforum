@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: YTForum
+        psr4_prefix: YTForum
         src_path: app

@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace YTForum\Services;
 
-use App\User;
+use YTForum\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
