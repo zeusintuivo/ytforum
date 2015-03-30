@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="logApp">
+<head>
+	<title>Logger Test</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./zc.php?t=css&f=../bower_components/bootstrap/dist/css/bootstrap,assets/css/mixmatch/style"/>
+
+	 <!-- 
+	 ,../bower_components/angular/angular.min.js,../bower_components/angular-ui-router/release/angular-ui-router.min.js,../bower_components/angular-resource/angular-resource.min.js,./app/app.logger.js
+
+	<script src="assets/css/mixmatch/style.js"></script>
+	<script src="./zc.php?t=map&f=../bower_components/angular-resource/angular-resource.min.js"></script>
+	 script src="./zc.php?t=js&f=../assets/css/mixmatch/style.js&debug"></script>-->
+	
+
+	<script src="./zc.php?t=js&f=../bower_components/jquery/jquery.min,assets/css/mixmatch/style,../bower_components/angular/angular.min,../bower_components/angular-ui-router/release/angular-ui-router.min,../bower_components/angular-resource/angular-resource.min,app/app.logger"></script>
+
+</head>
+<body>
+	<div ng-include="'app/shared/nav/nav.html'"></div>
+	<div class="container">
+		<div ng-view></div>
+	</div>
+</body>
+</html>

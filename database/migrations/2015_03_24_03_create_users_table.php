@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration {
 			$table->enum('isAdmin', array(0,1))->default(0);
 			$table->rememberToken();
 			$table->integer('person_id')->unsigned();
-			$table->foreign('person_id')->references('id')->on('persons');
+			// $table->foreign('person_id')->references('id')->on('persons');
 			$table->timestamps();
 		});
 	}

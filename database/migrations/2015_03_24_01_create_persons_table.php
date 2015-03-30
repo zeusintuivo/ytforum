@@ -8,12 +8,19 @@ class CreatePersonsTable extends Migration {
 	/**
 	 * Run the migrations.
 	 *
-	   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(100) NOT NULL,
-  `middle_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `gender` enum('M', 'F') NOT NULL,
-  `birth_date` date DEFAULT NULL,
+	 -- Person --
+	 
+	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  	`first_name` varchar(100) NOT NULL,
+  	`middle_name` varchar(100) NOT NULL,
+  	`last_name` varchar(100) NOT NULL,
+  	`gender` enum('M', 'F') NOT NULL,
+  	jurisdiction
+  	`birth_date` date DEFAULT NULL,
+
+	created_at
+	updated_at
+
 	 * @return void
 	 */
 	public function up()
@@ -26,6 +33,8 @@ class CreatePersonsTable extends Migration {
 			$table->string('middle_name', 100);
 			$table->string('last_name', 100);
 			$table->string('jurisdiction', 100);
+			$table->enum('gender', ['m','f']);
+			$table->date('birth_date');
 			$table->timestamps();
 		});
 	}
