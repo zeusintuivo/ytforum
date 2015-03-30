@@ -4,6 +4,7 @@
 .env.*.php
 .env.php
 .env
+.idea
 /bower_components
 /node_modules/laravel-elixir/node_modules/gulp-sass/node_modules/node-sass/test/fixtures/spec/spec/extend-tests/104_test_nested_extender_counts_extended_subselectors/104_test_nested_extender_counts_extended_subselectors/expected_output.css
 
