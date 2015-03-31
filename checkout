@@ -1,0 +1,2 @@
+@ECHO OFF
+git checkout %*

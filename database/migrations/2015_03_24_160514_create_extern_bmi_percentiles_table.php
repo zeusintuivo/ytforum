@@ -18,7 +18,7 @@ class CreateExternBmiPercentilesTable extends Migration {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned()->unique();
 			
-			$table->enum('enum', ['M', 'F']);
+			$table->enum('enum', ['m', 'f']);
 			$table->decimal('age_mo', 4, 1);
 			$table->decimal('p3', 10, 8);
 			$table->decimal('p5', 10, 8);

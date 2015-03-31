@@ -2,6 +2,10 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+use YTForum\Models\Pool;
+use YTForum\Models\PoolOptions;
 
 class CreatePoolOptionsTable extends Migration {
 
@@ -12,6 +16,7 @@ class CreatePoolOptionsTable extends Migration {
 	 */
 	public function up()
 	{
+		Schema::drop('pool_options');
 		Schema::create('pool_options', function(Blueprint $table)
 		{
 			$table->increments('id');
@@ -20,6 +25,8 @@ class CreatePoolOptionsTable extends Migration {
 			$table->integer('vote');
 			$table->timestamps();
 		});
+
+		
 	}
 
 	/**

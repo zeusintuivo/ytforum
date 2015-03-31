@@ -1,0 +1,3 @@
+@ECHO OFF
+set currentbranch = $(git rev-parse --abbrev-ref HEAD)
+git push origin $currentbranch
