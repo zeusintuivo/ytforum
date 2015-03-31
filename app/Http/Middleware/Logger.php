@@ -2,8 +2,10 @@
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
 
-class Demo {
+class Logger {
 
 	/**
 	 * The Guard implementation.
@@ -33,8 +35,9 @@ class Demo {
 	 */
 	public function handle($request, Closure $next)
 	{
+
 		$results = DB::select('select * from users where id = ?', [1]);
-		
+
 		if ($request->has('host')) {
 			dd($request);
 		}

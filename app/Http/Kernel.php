@@ -16,7 +16,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
 		'YTForum\Http\Middleware\VerifyCsrfToken',
-		'YTForum\Http\Middleware\Demo',
+		'YTForum\Http\Middleware\Logger',
 	];
 
 	/**
